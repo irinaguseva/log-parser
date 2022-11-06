@@ -1,6 +1,6 @@
 # Парсер логов 
 path = "E:\log.log"# Здесь вводится путь к файлу с логами
-path_ans = "E:\\ans_parser.txt"
+path_ans = "E:\\ans_parser.txt" # Здесь вводится путь к файлу с логами
 word = input() # Здесь должно быть введено слово
 with open(path, 'r') as f:
     data = f.readlines()
