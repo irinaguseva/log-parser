@@ -8,10 +8,11 @@ print(data[0])
 print(data[1])
 print(data[2])
 ans = []
-for log in data[:10000]:
+for log in data:
     if word in log:
         ans.append(log)
 with open(path_ans, 'w') as f:
     for line in ans:
+        print(line)
         f.write("%s\n" % line)
 
