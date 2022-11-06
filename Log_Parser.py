@@ -3,5 +3,14 @@
 # Блок 1
 path = input() # Здесь вводится путь к файлу с логами, например, "E:\log.log"
 path_ans = "E:\\ans_parser.txt" # Здесь находится путь к файлу с ответом
-word = input() # Здесь должно быть введено слово
 
+# Блок 2
+with open(path, 'r') as f:
+word = input() # Здесь должно быть введено слово
+    data = f.readlines()
+ans = []
+for log in data:
+    if word in log:
+        ans.append(log)
+        
+        
